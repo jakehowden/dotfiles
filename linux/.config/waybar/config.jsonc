@@ -1,82 +1,48 @@
 {
-
-  "position": "top",
-
-  "modules-left": ["clock", "custom/time" "custom/mouse", "custom/keyboard", "custom/headset"],
-
-  "modules-center": ["hyprland/workspaces"],
-
-  "modules-right": ["custom/audio_switcher", "network", "pulseaudio"],
-
+  "position": "top",
+  "modules-left": ["clock", "custom/time", "custom/mouse", "custom/keyboard", "custom/headset"],
+  "modules-center": ["hyprland/workspaces"],
+  "modules-right": ["custom/audio_switcher", "network", "pulseaudio"],
   "clock": {
     "format": "{:%A %e %B}"
   },
   "custom/time": {
-    "exec": "/home/jh/.config/Electron/waybar/scripts/time.sh",
-    "format": "{}"
+    "exec": "/home/jh/.config/waybar/scripts/time.sh",
+    "format": "{}",
     "interval": 1
   },
-  "network": {
-
-    "interface": "enp8s0",
-
-    "format-ethernet": "",
-
-    "format-disconnected": "<span color='#ff0000'></span>"
-
-  },
-
-  "pulseaudio": {
-
-    "format": "{icon}   {volume}%",
-
-    "format-muted": " ",
-
-    "format-icons": {
-
-      "default": ["", "", ""]
-
-    },
-
-    "on-click": "pavucontrol"
-
-  },
-
-  "custom/audio_switcher": {
-
-    "exec": "/home/jh/.config/waybar/scripts/audio_switch.sh",
-
-    "format": "{}",
-
-    "on-click": "/home/jh/.config/waybar/scripts/audio_switch.sh",
-
-    "signal": 10
-
-  },
-
-  "custom/mouse": {
-
-    "exec": "/home/jh/.config/waybar/scripts/mouse_battery.sh",
-
-    "interval": 60,
-
-    "format": "{}"
-
-  },
-
-  "custom/keyboard": {
-
-    "exec": "/home/jh/.config/waybar/scripts/keyboard_battery.sh",
-
-    "interval": 60,
-
-    "format": "{}"
-
-  },
+  "network": {
+    "interface": "enp8s0",
+    "format-ethernet": "",
+    "format-disconnected": "<span color='#ff0000'></span>"
+  },
+  "pulseaudio": {
+    "format": "{icon}  {volume}%",
+    "format-muted": " ",
+    "format-icons": {
+      "default": ["", "", ""]
+    },
+    "on-click": "pavucontrol"
+  },
+  "custom/audio_switcher": {
+    "exec": "/home/jh/.config/waybar/scripts/audio_switch.sh",
+    "format": "{}",
+    "on-click": "/home/jh/.config/waybar/scripts/audio_switch.sh",
+    "signal": 10
+  },
+  "custom/mouse": {
+    "exec": "/home/jh/.config/waybar/scripts/mouse_battery.sh",
+    "interval": 60,
+    "format": "{}"
+  },
+  "custom/keyboard": {
+    "exec": "/home/jh/.config/waybar/scripts/keyboard_battery.sh",
+    "interval": 60,
+    "format": "{}"
+  },
   "custom/headset": {
     "exec": "/home/jh/.config/waybar/scripts/headset_battery.sh",
     "format": "{}",
     "interval": 60
-  }
-
+  }
 }
