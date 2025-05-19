@@ -18,10 +18,10 @@ tooltip {
   border-width: 2px;
 }
 
-#tray,
 #clock,
 #window,
 #workspaces,
+#custom-usage,
 #custom-time,
 #custom-mouse,
 #custom-keyboard,
@@ -96,38 +96,13 @@ tooltip {
   margin-right: 10px;
 }
 
-#network {
-  color: @color3;
-  margin-right: 10px;
-}
-
-#pulseaudio {
-  border-left: 0px;
-  border-right: 0px;
-  color: @color5;
-  margin-right: 10px;
-}
-
-#custom-time {
-  color: @color6;
-  margin-right: 10px;
-}
-
-#custom-mouse {
-  color: @color6;
-  margin-right: 10px;
-}
-
-#custom-keyboard{
-  color: @color6;
-  margin-right: 10px;
-}
-
-#custom-headset{
-  color: @color6;
-  margin-right: 10px;
-}
-
+#network,
+#pulseaudio,
+#custom-time,
+#custom-usage,
+#custom-mouse,
+#custom-keyboard,
+#custom-headset,
 #custom-audio_switcher{
   color: @color6;
   margin-right: 10px;
