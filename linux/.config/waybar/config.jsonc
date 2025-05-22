@@ -4,7 +4,7 @@
   "modules-center": ["hyprland/workspaces"],
   "modules-right": ["custom/audio_switcher", "battery", "pulseaudio", "network", "clock", "custom/time"],
   "clock": {
-    "format": "{:%A %e %B}"
+    "format": "{:%a %b %d}"
   },
   "network": {
     "interface": "enp8s0",
@@ -35,33 +35,33 @@
     "tooltip-format": "{time}"
   },
   "custom/time": {
-    "exec": "/home/jh/.config/waybar/scripts/time.sh",
     "format": "{}",
-    "interval": 1
+    "interval": 60,
+    "exec": "$HOME/.config/waybar/scripts/time.sh",
   },
   "custom/usage": {
-    "exec": "/home/jh/.config/waybar/scripts/usage.sh",
+    "exec": "$HOME/.config/waybar/scripts/usage.sh",
     "format": "{}",
     "interval": 5
   },
   "custom/audio_switcher": {
-    "exec": "/home/jh/.config/waybar/scripts/audio_switch.sh",
+    "exec": "$HOME/.config/waybar/scripts/audio_switch.sh",
     "format": "{}",
-    "on-click": "/home/jh/.config/waybar/scripts/audio_switch.sh",
+    "on-click": "$HOME/.config/waybar/scripts/audio_switch.sh",
     "signal": 10
   },
   "custom/mouse": {
-    "exec": "/home/jh/.config/waybar/scripts/mouse_battery.sh",
+    "exec": "$HOME/.config/waybar/scripts/mouse_battery.sh",
     "interval": 60,
     "format": "{}"
   },
   "custom/keyboard": {
-    "exec": "/home/jh/.config/waybar/scripts/keyboard_battery.sh",
+    "exec": "$HOME/.config/waybar/scripts/keyboard_battery.sh",
     "interval": 60,
     "format": "{}"
   },
   "custom/headset": {
-    "exec": "/home/jh/.config/waybar/scripts/headset_battery.sh",
+    "exec": "$HOME/.config/waybar/scripts/headset_battery.sh",
     "format": "{}",
     "interval": 60
   }
