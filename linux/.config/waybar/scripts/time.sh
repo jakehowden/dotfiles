@@ -2,4 +2,4 @@
 #echo "$(date +"%a %b %d")"
 #echo "$(date +"%I:%M %p")"
 
-date +"%H:%M"
+echo 󰥔 $(date +"%H:%M")

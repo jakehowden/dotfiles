@@ -1,120 +1,84 @@
+/* === GENERAL MODULE STYLING === */
 * {
   border: none;
-  font-family: CommitMono Nerd Font;
-  font-size: 14px;
-  min-height: 0;
+  border-radius: 6px;
+  padding: 4px 10px;
+  margin: 0;
+  font-family: 'CaskaydiaCove Nerd Font', monospace;
+  font-size: 15px;
+  color: #cdd6f4;
 }
 
-window#waybar {
-  background: @base;
-  color: @color8;
+window#waybar{
+  background-color: transparent;
 }
 
-tooltip {
-  background: @base;
-  border-color: @crust;
-  border-radius: 10px;
-  border-style: solid;
-  border-width: 2px;
+/* === GROUP 1: Peripherals (keyboard, mouse, headset) === */
+
+#custom-peripherals {
+  background-color: #4c3743;
+  color: #e67e80;
+  border: 2px solid #e67e80;
+  margin-left: 4px;
+  margin-right: 8px;
 }
 
-#window,
-#workspaces,
-#custom-usage,
-#custom-mouse,
-#custom-keyboard,
-#custom-headset,
-#network,
-#pulseaudio,
-#custom-audio_switcher {
-  background: @crust;
-  border-radius: 8px;
-  border: 1px solid @crust;
-  font-weight: 600;
-  margin: 6px 0 6px 0;
-  padding: 3.5px 16px;
+/* === GROUP 2: Usage === */
+
+#custom-usage {
+  background-color: #493b40;
+  color: #e69875;
+  border: 2px solid #e69875;
+  margin-left: 4px;
+  margin-right: 8px;
 }
 
-#tray {
-  margin-right: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
+/* === GROUP 3: Workspaces === */
 
 #workspaces {
-  font-weight: Bold;
-  margin-left: 10px;
-  margin-right: 10px;
-  padding-left: 3.5px;
-  padding-right: 3.5px;
+  background-color: #45443c;
+  color: #dbbc7f;
+  border: 2px solid #dbbc7f;
+  padding: 2px 12px;
+  margin: 0 8px;
 }
 
-#workspaces :nth-child(5) {
-  margin-right: 0px;
+/* === GROUP 4: System (audio_switcher, battery, pulseaudio, network) === */
+#custom-audio_switcher,
+#battery,
+#pulseaudio,
+#network  {
+  background-color: #3c4841;
+  color: #a7c080;
+  border: 2px solid #a7c080;
+  margin-left: 4px;
+  margin-right: 8px;
 }
 
-#workspaces button {
-  border-radius: 6px;
-  color: @color9;
-  padding: 6px;
-  margin-right: 5px;
-}
-
-#workspaces button.active {
-  background: @color2;
-  color: @color8;
-}
-
-#workspaces button.focused {
-  background: @color7;
-  color: @color8;
-}
-
-#workspaces button.urgent {
-  background: @color4;
-  color: @color8;
-}
-
-#workspaces button:hover {
-  background: @crust;
-  color: @color7;
-}
-
-#window {
-  background: transparent;
-  border-radius: 10px;
-  margin-left: 60px;
-  margin-right: 60px;
-}
-
+/* === Group 5: Clock and Time === */
 #clock,
 #custom-time {
-  background: #2e3440;
-  padding: 0 8px;
-  color: #eceff4;
+  border-top: 2px solid #7fbbb3;
+  border-bottom: 2px solid #7fbbb3;
   border-radius: 0;
-  font-weight: bold;
 }
 
 #clock {
+  background-color: #384b55;
+  color: #7fbbb3;
+  border-left: 2px solid #7fbbb3;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
+  margin-left: 4px;
 }
 
 #custom-time {
+  background-color: #7fbbb3;
+  color: #384b55;
+  border-right: 2px solid #7fbbb3;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
-  border-left: 1px solid #4c566a; /* Optional separator */
+  margin-right: 8px;
 }
 
-#network,
-#pulseaudio,
-#custom-usage,
-#custom-mouse,
-#custom-keyboard,
-#custom-headset,
-#custom-audio_switcher{
-  color: @color6;
-  margin-right: 10px;
-}
 

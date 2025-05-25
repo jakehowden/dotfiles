@@ -1,10 +1,10 @@
 {
   "position": "top",
-  "modules-left": ["custom/mouse", "custom/keyboard", "custom/headset", "custom/usage"],
+  "modules-left": ["custom/peripherals", "custom/usage"],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": ["custom/audio_switcher", "battery", "pulseaudio", "network", "clock", "custom/time"],
   "clock": {
-    "format": "{:%a %b %d}"
+    "format": "  {:%a %b %d}"
   },
   "network": {
     "interface": "enp8s0",
@@ -64,5 +64,11 @@
     "exec": "$HOME/.config/waybar/scripts/headset_battery.sh",
     "format": "{}",
     "interval": 60
+  },
+  "custom/peripherals": {
+    "exec": "$HOME/.config/waybar/scripts/peripherals.sh",
+    "format": "{}",
+    "interval": 60
   }
+
 }
