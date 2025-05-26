@@ -2,14 +2,14 @@
   "position": "top",
   "modules-left": ["custom/peripherals", "custom/usage"],
   "modules-center": ["hyprland/workspaces"],
-  "modules-right": ["custom/audio_switcher", "battery", "pulseaudio", "network", "clock", "custom/time"],
+  "modules-right": ["custom/audio_switcher", "battery", "pulseaudio", "network", "clock", "custom/time", "custom/power"],
   "clock": {
     "format": "  {:%a %b %d}"
   },
   "network": {
     "interface": "enp8s0",
     "format-ethernet": "",
-    "format-disconnected": "<span color='#ff0000'></span>"
+    "format-disconnected": "<span color='#e67e80'></span>"
   },
   "pulseaudio": {
     "format": "{icon}  {volume}%",
@@ -69,6 +69,9 @@
     "exec": "$HOME/.config/waybar/scripts/peripherals.sh",
     "format": "{}",
     "interval": 60
+  },
+  "custom/power": {
+    "on-click": "nwg-bar",
+    "format": "⏻"
   }
-
 }

@@ -81,4 +81,11 @@ window#waybar{
   margin-right: 8px;
 }
 
-
+/* === Group 6: Power === */
+#custom-power{
+  border: 2px solid #83c092;
+  background-color: #4a6257;
+  color: #83c092;
+  margin-left: 4px;
+  margin-right: 8px;
+ }
