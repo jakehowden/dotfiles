@@ -1,6 +1,6 @@
 # dotfiles
 
 ## linux
-![image](https://github.com/user-attachments/assets/4197266e-66ae-475c-8f5a-62104c196f2b)
+![image](https://github.com/user-attachments/assets/fa9c42c1-c37f-445e-bf33-9308f3cc3212)
 
 **Based on the [everforest](https://github.com/sainnhe/everforest) theme**
