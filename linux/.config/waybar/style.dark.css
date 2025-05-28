@@ -32,14 +32,32 @@ window#waybar{
   margin-right: 8px;
 }
 
-/* === GROUP 3: Workspaces === */
+/* === GROUP 3: Hyprland === */
 
+#window,
 #workspaces {
   background-color: #374145;
   color: #dbbc7f;
   border: 2px solid #dbbc7f;
-  padding: 2px 12px;
-  margin: 0 8px;
+  border-radius: 8px 0 0 8px; /* Start with rounded left */
+  margin: 0;
+  padding: 0 6px;
+}
+
+#window {
+  background-color: #dbbc7f;
+  color: #374145;  
+  border-radius: 0 8px 8px 0;
+  border-left: none;
+  padding-left: 0;
+}
+
+#workspaces button {
+  padding: 0 1px;
+  margin: 0 1px;
+  border: none;
+  background: transparent;
+  box-shadow: none;
 }
 
 /* === GROUP 4: System (audio_switcher, battery, pulseaudio, network) === */

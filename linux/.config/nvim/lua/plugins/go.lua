@@ -46,6 +46,7 @@ return {
     "nvim-neotest/neotest",
     dependencies = {
       "nvim-neotest/neotest-go",
+      "nvim-neotest/nvim-nio",
     },
     opts = function(_, opts)
       opts.adapters = opts.adapters or {}

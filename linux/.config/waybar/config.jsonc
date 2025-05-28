@@ -1,15 +1,15 @@
 {
   "position": "top",
   "modules-left": ["custom/peripherals", "custom/usage"],
-  "modules-center": ["hyprland/workspaces"],
+  "modules-center": ["hyprland/workspaces", "hyprland/window"],
   "modules-right": ["custom/audio_switcher", "battery", "pulseaudio", "network", "clock", "custom/time", "custom/power"],
   "clock": {
     "format": "  {:%a %b %d}"
   },
   "network": {
-    "interface": "enp8s0",
     "format-ethernet": "",
-    "format-disconnected": "<span color='#e67e80'></span>"
+    "format-wifi": "󰖩",
+    "format-disconnected": "<span color='#e67e80'></span>"
   },
   "pulseaudio": {
     "format": "{icon}  {volume}%",
@@ -34,6 +34,21 @@
     "format-icons": ["", "", "", "", ""],
     "tooltip-format": "{time}"
   },
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+        "active": "<span color='#dbbc7f'>●</span>",
+        "default": "<span color='#dbbc7f'>○</span>",
+        "urgent": "<span color='#dbbc7f'>◉</span>"
+    },
+    "persistent_workspaces": {
+        "*": 5
+    },
+    "all-outputs": true
+  },
+  "hyprland/window": {
+    "format": "<span color='#374145'>{}</span>"
+  },
   "custom/time": {
     "format": "{}",
     "interval": 60,
@@ -49,21 +64,6 @@
     "format": "{}",
     "on-click": "$HOME/.config/waybar/scripts/audio_switch.sh",
     "signal": 10
-  },
-  "custom/mouse": {
-    "exec": "$HOME/.config/waybar/scripts/mouse_battery.sh",
-    "interval": 60,
-    "format": "{}"
-  },
-  "custom/keyboard": {
-    "exec": "$HOME/.config/waybar/scripts/keyboard_battery.sh",
-    "interval": 60,
-    "format": "{}"
-  },
-  "custom/headset": {
-    "exec": "$HOME/.config/waybar/scripts/headset_battery.sh",
-    "format": "{}",
-    "interval": 60
   },
   "custom/peripherals": {
     "exec": "$HOME/.config/waybar/scripts/peripherals.sh",
