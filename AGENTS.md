@@ -18,7 +18,7 @@
 ## Tech Stack
 
 | Area | Technologies |
-|---|---|
+| --- | --- |
 | Language | C# / .NET (latest LTS preferred) |
 | Messaging | Kafka (actively migrating to **Azure Service Bus**) |
 | APIs | **Minimal APIs**, **Refit** (typed HTTP clients) |
@@ -77,6 +77,7 @@ When I ask for help with documentation, follow these guidelines:
 ### ADRs (Architecture Decision Records)
 
 Use this structure:
+
 1. **Title** — Short, descriptive
 2. **Status** — Proposed / Accepted / Deprecated / Superseded
 3. **Context** — What is the problem or situation?
