@@ -101,9 +101,9 @@ Include **acceptance criteria** as a checklist. Keep stories small and independe
 ## AI Behaviour Preferences
 
 - **Be direct.** Skip preamble — get to the answer or code.
+- **Never assume.** If my input does not fully specify a decision that affects behaviour, architecture, or correctness, stop and ask — do not guess or fill in gaps silently. Sensible defaults are fine only for trivial style or formatting choices.
+- **Research before implementing.** If you believe there is a better approach than what I've described — or if you spot a suboptimal pattern — pause, research alternatives, and present them with trade-offs. Do not write code until I've chosen an approach.
 - **Show complete files/methods** when making changes — don't use `// ... existing code` shorthand unless the file is very large.
-- **Explain trade-offs** when there are multiple reasonable approaches.
-- **Ask before assuming** if a requirement is genuinely ambiguous — but prefer a sensible default over excessive questions.
 - **Don't over-comment** code. Let good naming and structure speak for itself. Add comments only where *why* is non-obvious.
 - When generating multiple files, maintain consistency in style and structure across all of them.
 
