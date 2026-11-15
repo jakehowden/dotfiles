@@ -1,6 +1,6 @@
 {
 	"$schema" : "https://aka.ms/winget-packages.schema.2.0.json",
-	"CreationDate" : "2026-11-15T13:02:16.845-00:00",
+	"CreationDate" : "2026-11-15T13:27:53.301-00:00",
 	"Sources" : 
 	[
 		{
@@ -53,6 +53,9 @@
 				},
 				{
 					"PackageIdentifier" : "Microsoft.VCRedist.2010.x64"
+				},
+				{
+					"PackageIdentifier" : "Starship.Starship"
 				},
 				{
 					"PackageIdentifier" : "RaspberryPiFoundation.RaspberryPiImager"
@@ -275,6 +278,9 @@
 				},
 				{
 					"PackageIdentifier" : "Microsoft.Outlook"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.PowerShell"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.UI.Xaml.2.6"
