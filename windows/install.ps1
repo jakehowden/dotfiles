@@ -22,3 +22,6 @@ foreach ($src in $targets.Keys) {
     Copy-Item (Join-Path $here $src) $dest -Force
     Write-Host "copied $src -> $dest"
 }
+
+# komorebi.json reads per-app rules from ~/applications.json, which komorebi publishes upstream.
+if (Get-Command komorebic -ErrorAction SilentlyContinue) { komorebic fetch-app-specific-configuration }
